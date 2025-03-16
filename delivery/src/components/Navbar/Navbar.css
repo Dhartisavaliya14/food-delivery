@@ -3,10 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: -65px;
+    margin-bottom: -70px;
 }
 
 .logo {
-    width: 170px;
+    width: 180px;
 }
 
 .navbar_menu {
