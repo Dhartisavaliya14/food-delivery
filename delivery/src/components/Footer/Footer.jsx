@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import { assets } from '../../../assets/assets'
+import { assets } from '../../assets/assets'
 
 const Footer = () => {
     return (
@@ -40,9 +40,8 @@ const Footer = () => {
                         <li>concate@hungerhub.com</li>
                     </ul>
                 </div>
-
-
             </div>
+            <hr />
             <p className="footer-copyright">Copyright 2025 @ hungerhub.com - All Right Reserved.</p>
         </div>
     )
