@@ -42,8 +42,6 @@ import food_32 from './food_32.png'
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
 import remove_icon_red from './remove_icon_red.png'
-import app_store from './app_store.png'
-import play_store from './play_store.png'
 import linkedin_icon from './linkedin_icon.png'
 import facebook_icon from './facebook_icon.png'
 import twitter_icon from './twitter_icon.png'
@@ -64,8 +62,6 @@ export const assets = {
     add_icon_green,
     add_icon_white,
     remove_icon_red,
-    app_store,
-    play_store,
     linkedin_icon,
     facebook_icon,
     twitter_icon,
@@ -113,7 +109,7 @@ export const food_list = [
         _id: "1",
         name: "Greek salad",
         image: food_1,
-        price: 60,
+        price: 230,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
     },
@@ -121,7 +117,7 @@ export const food_list = [
         _id: "2",
         name: "Veg salad",
         image: food_2,
-        price: 80,
+        price: 299,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
     }, {
@@ -226,30 +222,30 @@ export const food_list = [
         category: "Cake"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Paneer Tikka",
         image: food_21,
         price: 140,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pure Veg"
     }, {
         _id: "22",
-        name: "Fried Cauliflower",
+        name: "Aloo Paratha",
         image: food_22,
         price: 99,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pure Veg"
     }, {
         _id: "23",
-        name: "Mix Vegetable Pulao",
+        name: "Dal Tadka",
         image: food_23,
         price: 120,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pure Veg"
     }, {
         _id: "24",
-        name: "Rice Zucchini",
+        name: "Chole Bhature",
         image: food_24,
-        price: 129,
+        price: 199,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pure Veg"
     },
