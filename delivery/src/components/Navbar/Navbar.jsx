@@ -3,7 +3,7 @@ import './Navbar.css'
 import { assets } from '../../assets/assets'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({ setShowLogin }) => {
 
     const [menu, setMenu] = useState('Home')
 
@@ -27,7 +27,7 @@ const Navbar = () => {
                 </div>
 
                 <div>
-                    <button>sing in</button>
+                    <button onClick={() => setShowLogin(true)}>sing in</button>
                 </div>
 
             </div>
