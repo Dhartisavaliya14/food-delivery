@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Navbar.css'
 import { assets } from '../../assets/assets'
 import { Link } from 'react-router-dom'
@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom'
 const Navbar = ({ setShowLogin }) => {
 
     const [menu, setMenu] = useState('Home')
+
+    const { getTotalCarAmont } = useContext
 
     return (
         // left side navbar menu
