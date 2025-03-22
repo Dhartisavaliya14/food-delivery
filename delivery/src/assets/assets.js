@@ -109,7 +109,7 @@ export const food_list = [
         _id: "1",
         name: "Greek salad",
         image: food_1,
-        price: 230,
+        price: 210,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
     },
@@ -117,14 +117,14 @@ export const food_list = [
         _id: "2",
         name: "Veg salad",
         image: food_2,
-        price: 299,
+        price: 200,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
     }, {
         _id: "3",
         name: "Clover Salad",
         image: food_3,
-        price: 65,
+        price: 160,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
     }, {
@@ -138,21 +138,21 @@ export const food_list = [
         _id: "9",
         name: "Ripple Ice Cream",
         image: food_9,
-        price: 45,
+        price: 60,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Deserts"
     }, {
         _id: "10",
         name: "Mix Fruit Ice Cream",
         image: food_10,
-        price: 67,
+        price: 120,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Deserts"
     }, {
         _id: "11",
         name: "Strawberry Jar Ice Cream",
         image: food_11,
-        price: 45,
+        price: 99,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Deserts"
     }, {
@@ -196,21 +196,21 @@ export const food_list = [
         _id: "17",
         name: "Cup Cake",
         image: food_17,
-        price: 68,
+        price: 60,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Cake"
     }, {
         _id: "18",
         name: "Vegan Cake",
         image: food_18,
-        price: 250,
+        price: 350,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Cake"
     }, {
         _id: "19",
         name: "Butterscotch ",
         image: food_19,
-        price: 350,
+        price: 220,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Cake"
     }, {
@@ -245,7 +245,7 @@ export const food_list = [
         _id: "24",
         name: "Chole Bhature",
         image: food_24,
-        price: 199,
+        price: 120,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pure Veg"
     },
@@ -261,7 +261,7 @@ export const food_list = [
         _id: "26",
         name: "Tomato Pasta",
         image: food_26,
-        price: 99,
+        price: 199,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pasta"
     }, {
@@ -282,7 +282,7 @@ export const food_list = [
         _id: "29",
         name: "Buttter Noodles",
         image: food_29,
-        price: 70,
+        price: 90,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Noodles"
     }, {
@@ -294,9 +294,9 @@ export const food_list = [
         category: "Noodles"
     }, {
         _id: "31",
-        name: "Somen Noodles",
+        name: "Hakka Noodles",
         image: food_31,
-        price: 80,
+        price: 130,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Noodles"
     }, {

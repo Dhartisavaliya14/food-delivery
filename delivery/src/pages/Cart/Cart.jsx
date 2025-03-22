@@ -2,10 +2,14 @@ import React from 'react'
 import './Cart.css'
 import { useContext } from 'react'
 import { StoreContext } from '../../context/StoreContext'
+import { useNavigate } from 'react-router-dom'
+import { assets } from '../../assets/assets'
 
 const Cart = () => {
 
-    const { cartItems, food_list, removeFromCart, getTotalCartAmount } = useContext(StoreContext)
+    const { cartItems, food_list, removeFromCart, getTotalCartAmount, addToCart } = useContext(StoreContext)
+
+    const navigate = useNavigate();
 
     return (
         <div className='cart'>
@@ -34,7 +38,8 @@ const Cart = () => {
                                     <p>₹ {item.price}</p>
                                     <p>{cartItems[item._id]}</p>
                                     <p>₹ {item.price * cartItems[item._id]}</p>
-                                    <p onClick={() => removeFromCart(item._id)} className='cross'>X</p>
+                                    <p onClick={() => removeFromCart(item._id)} className='cross'>x</p>
+
                                 </div>
                                 <hr />
                             </div>
@@ -58,26 +63,26 @@ const Cart = () => {
                         <hr />
                         <div className="cart-total-details">
                             <p>Delivery Fee</p>
-                            <p>₹ {15.00}</p>
+                            <p>₹ {getTotalCartAmount() === 0 ? 0 : 14}</p>
                         </div>
                         <hr />
                         <div className="cart-total-details">
                             <p>Platform fee | 3.0 kms</p>
-                            <p>₹ {9.00}</p>
+                            <p>₹ {getTotalCartAmount() === 0 ? 0 : 9.00}</p>
                         </div>
                         <hr />
                         <div className="cart-total-details">
                             <p>GST and Restaurant Charges</p>
-                            <p>₹ {23.50}</p>
+                            <p>₹ {getTotalCartAmount() === 0 ? 0 : 21.50}</p>
                         </div>
                         <hr />
                         <div className="cart-total-details">
                             <b>To Pay</b>
-                            <b>₹ {getTotalCartAmount() + 15 + 9 + 23.50}</b>
+                            <b>₹ {getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 15 + 9 + 23.50}</b>
                         </div>
 
                     </div>
-                    <button>PROCEED TO CHECKOUT</button>
+                    <button onClick={() => navigate('/order')}>PROCEED TO CHECKOUT</button>
                 </div>
 
 
