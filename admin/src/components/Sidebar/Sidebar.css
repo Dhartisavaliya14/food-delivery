@@ -25,3 +25,8 @@
     cursor: pointer;
 
 }
+
+.sidbar-option.active {
+    background-color: #fff0ed;
+    border-color: tomato;
+}
