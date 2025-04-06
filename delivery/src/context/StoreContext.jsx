@@ -9,7 +9,7 @@ const StoreContextProvider = (props) => {
     const url = "http://localhost:4000";
     const [token, setToken] = useState(localStorage.getItem("token") || "");
     const [food_list, setFoodList] = useState([]);
-    const [user, setUser] = useState(null);  // ✅ Store user data
+    const [user, setUser] = useState(null);  // Store user data
 
     const addToCart = async (itemId) => {
         if (!cartItems[itemId]) {
@@ -54,14 +54,6 @@ const StoreContextProvider = (props) => {
         setCartItems(response.data.cartData);
     };
 
-    const loadUserData = async (token) => {
-        try {
-            const response = await axios.get(url + "/api/user/details", { headers: { token } });
-            setUser(response.data.user);
-        } catch (error) {
-            console.error("Error loading user data:", error);
-        }
-    };
 
     useEffect(() => {
         async function loadData() {
@@ -70,7 +62,7 @@ const StoreContextProvider = (props) => {
                 const storedToken = localStorage.getItem("token");
                 setToken(storedToken);
                 await loadCartData(storedToken);
-                await loadUserData(storedToken);
+
             }
         }
         loadData();
@@ -100,8 +92,8 @@ const StoreContextProvider = (props) => {
         url,
         token,
         setToken,
-        user, // ✅ Added user
-        setUser, // ✅ Added setUser
+        user,
+        setUser,
         login,
         logout
     };

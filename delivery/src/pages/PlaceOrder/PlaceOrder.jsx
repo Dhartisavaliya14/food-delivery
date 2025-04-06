@@ -2,9 +2,11 @@ import React, { useState, useContext } from 'react';
 import './PlaceOrder.css';
 import { StoreContext } from '../../context/StoreContext';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const PlaceOrder = () => {
     const { getTotalCartAmount, token, food_list, cartItems, url } = useContext(StoreContext);
+    const navigate = useNavigate();
 
     const [data, setData] = useState({
         firstName: "",
@@ -48,6 +50,8 @@ const PlaceOrder = () => {
 
             if (response.data.success) {
                 alert("Order placed successfully!");
+                window.location.href = response.data.success_url;
+                // navigate(response.data.success_url);
             } else {
                 alert("Failed to place order.");
             }
